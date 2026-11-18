@@ -1,0 +1,20 @@
+{
+  "where": "Apps Script editor -> Project Settings -> Script Properties. Do not store these in the repository.",
+  "required": [
+    "CLAUDE_API_KEY",
+    "CLAUDE_MODEL",
+    "SPREADSHEET_ID"
+  ],
+  "optional": [
+    "TEST_SENDER_ALLOWLIST"
+  ],
+  "managed_by_the_script": [
+    "PROCESSING_START_TS"
+  ],
+  "example": {
+    "CLAUDE_API_KEY": "<paste your Anthropic API key here; never commit a real key>",
+    "CLAUDE_MODEL": "<a model ID your key can use>",
+    "SPREADSHEET_ID": "<ID from the spreadsheet URL>",
+    "TEST_SENDER_ALLOWLIST": "<optional: comma-separated sender addresses or @domains; leave unset to process everyone>"
+  }
+}

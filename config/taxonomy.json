@@ -1,0 +1,71 @@
+{
+  "output_columns": [
+    "id",
+    "received",
+    "language",
+    "from_name",
+    "from_email",
+    "subject",
+    "body",
+    "Category",
+    "Urgency",
+    "Owner or queue",
+    "Proposed action",
+    "Confidence",
+    "Escalate flag"
+  ],
+  "state_sheet_columns": [
+    "message_id",
+    "status",
+    "attempts",
+    "updated_at",
+    "last_error"
+  ],
+  "categories": [
+    "Supplier invoices",
+    "Passenger complaints",
+    "Lost-property enquiries",
+    "Airline and handler operational requests",
+    "HR questions",
+    "Press enquiries",
+    "Vendor outreach",
+    "Safety reports",
+    "Other enquiries and requests"
+  ],
+  "owners": [
+    "ICT",
+    "Web and Communications",
+    "Terminal Operations",
+    "Information Desk",
+    "Commercial",
+    "Commercial and Concessionaires",
+    "Security",
+    "Legal",
+    "Customer Experience",
+    "Executive Management / CEO",
+    "Finance",
+    "HR",
+    "Marketing and Business Development",
+    "Technical/Infrastructure",
+    "Ground Handling"
+  ],
+  "urgencies": [
+    "U1",
+    "U2",
+    "U3",
+    "U4"
+  ],
+  "languages": [
+    "EN",
+    "BG"
+  ],
+  "confidences": [
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "escalate_values": [
+    "Yes",
+    "No"
+  ]
+}

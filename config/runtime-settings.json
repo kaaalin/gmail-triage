@@ -1,0 +1,23 @@
+{
+  "RESULTS_SHEET": "Triage Results",
+  "STATE_SHEET": "_triage_state",
+  "PROP": {
+    "KEY": "CLAUDE_API_KEY",
+    "MODEL": "CLAUDE_MODEL",
+    "SHEET_ID": "SPREADSHEET_ID",
+    "ALLOW": "TEST_SENDER_ALLOWLIST",
+    "START": "PROCESSING_START_TS"
+  },
+  "API_URL": "https://api.anthropic.com/v1/messages",
+  "API_VERSION": "2023-06-01",
+  "MAX_TOKENS": 4000,
+  "BATCH_SIZE": 10,
+  "LIST_PAGE_SIZE": 100,
+  "MAX_LIST_PAGES": 3,
+  "LOOKBACK_HOURS": 72,
+  "MAX_ATTEMPTS": 5,
+  "TIME_BUDGET_MS": 240000,
+  "LOCK_WAIT_MS": 10000,
+  "MODEL_BODY_CHARS": 12000,
+  "SHEET_CELL_LIMIT": 49000
+}

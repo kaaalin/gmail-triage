@@ -1,0 +1,17 @@
+{
+  "name": "gmail-email-triage-demo",
+  "version": "1.0.0",
+  "description": "Gmail email triage agent (Google Apps Script + Claude API): prompts, configuration exports, flow definitions and scripts to reproduce it.",
+  "private": true,
+  "engines": {"node": ">=18"},
+  "scripts": {
+    "test": "node tests/mock_tests.js && node tests/pipeline_tests.js",
+    "export": "node scripts/export.js",
+    "check:exports": "node scripts/export.js --check",
+    "check:flows": "node scripts/check-flows.js",
+    "build:reference": "node scripts/build-reference.js",
+    "verify:reference": "node scripts/verify-output.js data/reference/Practice_Mailbox_40_classified.csv",
+    "classify:live": "node scripts/classify-with-api.js",
+    "check": "npm run check:exports && npm run check:flows && npm test && npm run verify:reference"
+  }
+}

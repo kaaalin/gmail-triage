@@ -1,0 +1,45 @@
+{
+  "name": "gmail-email-triage",
+  "description": "Machine-readable definition of the triage flow implemented in src/Code.gs. scripts/check-flows.js verifies that every function named here exists in the code and that every limit equals the value in the code.",
+  "triggers": [
+    {"type": "time-driven", "every_minutes": 5, "handler": "processNewEmails", "installed_by": "installTrigger", "removed_by": "pauseTrigger"},
+    {"type": "manual", "handler": "runDemo", "note": "same logic as processNewEmails, with per-message logging"}
+  ],
+  "limits": {
+    "batch_size": {"config_key": "BATCH_SIZE", "value": 10, "meaning": "messages handled per run"},
+    "max_attempts": {"config_key": "MAX_ATTEMPTS", "value": 5, "meaning": "failed attempts before a message is parked as GAVE_UP"},
+    "lookback_hours": {"config_key": "LOOKBACK_HOURS", "value": 72, "meaning": "never look further back than this"},
+    "max_list_pages": {"config_key": "MAX_LIST_PAGES", "value": 3, "meaning": "pages of 100 inbox messages considered per run"},
+    "time_budget_ms": {"config_key": "TIME_BUDGET_MS", "value": 240000, "meaning": "stop starting new messages after this"},
+    "model_body_chars": {"config_key": "MODEL_BODY_CHARS", "value": 12000, "meaning": "body characters sent to Claude"}
+  },
+  "steps": [
+    {"id": "lock", "function": "runBatch_", "does": "Take the script lock (waits up to 10 s). If another run holds it, skip this run."},
+    {"id": "config", "function": "getConfig_", "does": "Read API key, model ID and spreadsheet ID from Script Properties; record the processing start time on first run."},
+    {"id": "sheets", "function": "ensureResultsSheet_", "does": "Create or validate the 13-column results tab; create the _triage_state tab (ensureStateSheet_)."},
+    {"id": "list", "function": "listCandidateIds_", "does": "List inbox messages received after the start time (query: in:inbox after:<epoch> plus optional sender allowlist), oldest first."},
+    {"id": "skip_finished", "function": "readStateIndex_", "does": "Skip messages whose state is DONE or GAVE_UP."},
+    {"id": "recover", "function": "ensureLabels_", "does": "If a results row already exists for the message ID, only re-apply the six labels from that row. No new row, no Claude call."},
+    {"id": "fetch", "function": "fetchMessage_", "does": "Read sender, subject, received time and plain-text body (HTML fallback) with the Gmail API."},
+    {"id": "allowlist", "function": "isAllowedSender_", "does": "If an allowlist is set and the sender is not on it, skip the message without recording state."},
+    {"id": "classify", "function": "classifyWithRetry_", "does": "Build the request (buildRequest_), call Claude (callClaude_), extract the record_triage tool input (extractDecision_) and validate it (validateDecision_). One extra attempt if the output is invalid."},
+    {"id": "assemble", "function": "buildRow_", "does": "Assemble the 13 columns; build column K with buildColumnK_ (action, then draft only when a reply is the right immediate action); apply the escalation rule (applyEscalationRule_)."},
+    {"id": "write_row", "function": "processNewMessage_", "does": "Set the row to plain text, then write exactly one row for the message ID."},
+    {"id": "label", "function": "ensureLabels_", "does": "Create missing Triage/... labels and add the six labels to that message only."},
+    {"id": "record", "function": "upsertState_", "does": "Mark the message DONE. Failures mark RETRY or GAVE_UP with the error text."}
+  ],
+  "message_states": {
+    "NEW": "No state row yet",
+    "RETRY": "Failed with a permanent per-message error; will be tried again next run",
+    "GAVE_UP": "Failed MAX_ATTEMPTS times; parked until resetFailedMessages is run",
+    "DONE": "Row written and six labels applied"
+  },
+  "error_policy": [
+    {"condition": "HTTP 429 (rate limit), 5xx, 529, network error", "kind": "transient", "effect": "Retry inside the call (short backoff). If still failing, stop the batch; nothing is marked processed and attempts are not consumed."},
+    {"condition": "HTTP 400, 401, 403, 404 from the Claude API, or missing Script Properties", "kind": "fatal", "effect": "Stop the run and raise an error (visible in Executions); attempts are not consumed."},
+    {"condition": "Invalid, cut-off or missing tool output after one extra attempt", "kind": "permanent", "effect": "No row written; attempts + 1; RETRY, or GAVE_UP at the limit."},
+    {"condition": "Gmail read or label failure for one message", "kind": "permanent", "effect": "attempts + 1; if the row was already written, the next run only recovers the labels."},
+    {"condition": "Another run holds the script lock", "kind": "skip", "effect": "This run does nothing."}
+  ],
+  "never_does": ["send or reply", "forward", "move or archive", "trash or delete mail"]
+}

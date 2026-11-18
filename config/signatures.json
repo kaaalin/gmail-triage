@@ -1,0 +1,84 @@
+{
+  "airport_name": {
+    "EN": "Sofia Airport \"Vasil Levski\"",
+    "BG": "Летище София „Васил Левски“"
+  },
+  "closing": {
+    "EN": "Kind regards,",
+    "BG": "С уважение,"
+  },
+  "greeting_generic": {
+    "EN": "Hello,",
+    "BG": "Здравейте,"
+  },
+  "greeting_ict": {
+    "EN": "Hello ICT Service Desk team,",
+    "BG": "Здравейте, колеги от ИКТ,"
+  },
+  "greeting_named_examples": {
+    "EN": "Hello <Name>,",
+    "BG": "Здравейте, <Name>,"
+  },
+  "signature_teams_by_owner": {
+    "ICT": {
+      "EN": "ICT Team",
+      "BG": "Екип „ИКТ“"
+    },
+    "Web and Communications": {
+      "EN": "Web and Communications Team",
+      "BG": "Екип „Уеб и комуникации“"
+    },
+    "Terminal Operations": {
+      "EN": "Terminal Operations Team",
+      "BG": "Екип „Терминални операции“"
+    },
+    "Information Desk": {
+      "EN": "Information Desk Team",
+      "BG": "Екип на информационното гише"
+    },
+    "Commercial": {
+      "EN": "Commercial Team",
+      "BG": "Търговски екип"
+    },
+    "Commercial and Concessionaires": {
+      "EN": "Commercial and Concessionaires Team",
+      "BG": "Екип „Търговия и концесионери“"
+    },
+    "Security": {
+      "EN": "Security Team",
+      "BG": "Екип „Сигурност“"
+    },
+    "Legal": {
+      "EN": "Legal Team",
+      "BG": "Юридически екип"
+    },
+    "Customer Experience": {
+      "EN": "Customer Experience Team",
+      "BG": "Екип „Обслужване на клиенти“"
+    },
+    "Executive Management / CEO": {
+      "EN": "Executive Management Team",
+      "BG": "Екип на висшето ръководство"
+    },
+    "Finance": {
+      "EN": "Finance Team",
+      "BG": "Финансов екип"
+    },
+    "HR": {
+      "EN": "HR Team",
+      "BG": "Екип „Човешки ресурси“"
+    },
+    "Marketing and Business Development": {
+      "EN": "Marketing and Business Development Team",
+      "BG": "Екип „Маркетинг и бизнес развитие“"
+    },
+    "Technical/Infrastructure": {
+      "EN": "Technical/Infrastructure Team",
+      "BG": "Екип „Техническа поддръжка и инфраструктура“"
+    },
+    "Ground Handling": {
+      "EN": "Ground Handling Team",
+      "BG": "Екип „Наземно обслужване“"
+    }
+  }
+}

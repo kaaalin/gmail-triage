@@ -1,0 +1,109 @@
+{
+  "name": "record_triage",
+  "description": "Record the triage decision for exactly one email.",
+  "input_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "language": {
+        "type": "string",
+        "enum": [
+          "EN",
+          "BG"
+        ],
+        "description": "Language the sender wrote in."
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "Supplier invoices",
+          "Passenger complaints",
+          "Lost-property enquiries",
+          "Airline and handler operational requests",
+          "HR questions",
+          "Press enquiries",
+          "Vendor outreach",
+          "Safety reports",
+          "Other enquiries and requests"
+        ]
+      },
+      "urgency": {
+        "type": "string",
+        "enum": [
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      },
+      "owner": {
+        "type": "string",
+        "enum": [
+          "ICT",
+          "Web and Communications",
+          "Terminal Operations",
+          "Information Desk",
+          "Commercial",
+          "Commercial and Concessionaires",
+          "Security",
+          "Legal",
+          "Customer Experience",
+          "Executive Management / CEO",
+          "Finance",
+          "HR",
+          "Marketing and Business Development",
+          "Technical/Infrastructure",
+          "Ground Handling"
+        ]
+      },
+      "suspected_phishing": {
+        "type": "boolean",
+        "description": "True only for suspected phishing or credential/payment scams."
+      },
+      "draft_appropriate": {
+        "type": "boolean",
+        "description": "True only if a reply to the sender (or the internal draft to ICT for phishing) is the right immediate action."
+      },
+      "proposed_action": {
+        "type": "string",
+        "description": "One to three imperative sentences in English for internal staff. No draft text."
+      },
+      "addressee": {
+        "type": "string",
+        "description": "Sender name or organisation to greet; empty string if unknown."
+      },
+      "reply_body": {
+        "type": "string",
+        "description": "Empty string if draft_appropriate is false. Otherwise reply body in the sender language, no greeting, closing or signature. Internal note to ICT if suspected_phishing."
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "High",
+          "Medium",
+          "Low"
+        ]
+      },
+      "escalate": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    "required": [
+      "language",
+      "category",
+      "urgency",
+      "owner",
+      "suspected_phishing",
+      "proposed_action",
+      "draft_appropriate",
+      "addressee",
+      "reply_body",
+      "confidence",
+      "escalate"
+    ]
+  }
+}
