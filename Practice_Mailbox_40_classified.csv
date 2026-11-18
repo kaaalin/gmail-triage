@@ -1,0 +1,329 @@
+﻿id,received,language,from_name,from_email,subject,body,Category,Urgency,Owner or queue,Proposed action,Confidence,Escalate flag
+P01,2027-03-02 08:14,EN,Nord Clean Ltd — Accounts,accounts@nordclean-example.com,Invoice 2027-4471 — overdue reminder,"Dear Sir or Madam, our invoice 2027-4471 for terminal cleaning consumables (EUR 4,380.00) was due on 15 February and remains unpaid. Please confirm the payment date. Bank details as per contract.",Supplier invoices,U3,Finance,"Verify invoice 2027-4471 and its payment status with the payment approver. Check any bank details against the contract on file, not against the email.
+
+Draft:
+Hello Nord Clean Ltd,
+
+Thank you for your reminder. We will check the status of invoice 2027-4471 and come back to you with confirmed payment timing once it is available.
+
+Kind regards,
+Finance Team, Sofia Airport ""Vasil Levski""",High,Yes
+P02,2027-03-02 08:41,BG,Офис Партнер ЕООД,faktura@ofispartner-example.bg,Фактура 10023 — канцеларски материали,"Здравейте, прилагаме фактура 10023 на стойност 1 240,50 лв. за доставка на канцеларски материали от 26 февруари. Моля за потвърждение на получаването.",Supplier invoices,U3,Finance,"Check that the attached invoice 10023 arrived in the original email, log it and confirm receipt to the supplier.
+
+Draft:
+Здравейте, Офис Партнер ЕООД,
+
+Благодарим за изпратената фактура 10023. Ще проверим дали е получена и ще Ви уведомим, ако е необходимо да я изпратите отново.
+
+С уважение,
+Финансов екип, Летище София „Васил Левски“",High,No
+P03,2027-03-02 09:02,EN,Martin Weber,m.weber-example@mailbox.de,Unacceptable queue at security on 28 February,I waited 48 minutes at security on Saturday morning and nearly missed flight FR1234. There were two lanes open at the busiest hour. I would like an explanation and to know what you intend to do about it.,Passenger complaints,U3,Customer Experience,"Ask Security to check queue and open-lane records for the morning of 28 February.
+
+Draft:
+Hello Martin Weber,
+
+I am sorry about the long wait at security and that you nearly missed your flight. We will ask the team to review the queue and lane staffing around your departure on flight FR1234 and let you know what we can confirm.
+
+Kind regards,
+Customer Experience Team, Sofia Airport ""Vasil Levski""",High,No
+P04,2027-03-02 09:20,BG,Галина Петрова,g.petrova-example@abv.bg,Оплакване — чакане за багаж 55 минути,Пристигнах в неделя вечер и чаках багажа си 55 минути на лента 2. Никой не даде информация. Моля за отговор защо се случва това.,Passenger complaints,U3,Customer Experience,"Identify the flight and ask the handler to review baggage delivery to belt 2.
+
+Draft:
+Здравейте, Галина Петрова,
+
+Съжаляваме за дългото чакане и липсата на информация. Моля, посочете номера на полета и датата на пристигане, за да проверим случая с наземния оператор.
+
+С уважение,
+Екип „Обслужване на клиенти“, Летище София „Васил Левски“",High,No
+P05,2027-03-02 09:35,EN,Ana Costa,ana.costa-example@gmail.com,Left my laptop charger at gate B4,"I think I left a black laptop charger in the seating area at gate B4 yesterday evening, around 19:30, before flight to Lisbon. Is there a way to check if it was found?",Lost-property enquiries,U3,Information Desk,"Check the lost-property log for a black laptop charger found near gate B4 on the previous evening.
+
+Draft:
+Hello Ana Costa,
+
+We will check whether a black laptop charger was handed in near gate B4. If you can, please share its brand or any other identifying feature, and your flight number.
+
+Kind regards,
+Information Desk Team, Sofia Airport ""Vasil Levski""",High,No
+P06,2027-03-02 10:03,BG,Иван Костов,ikostov-example@mail.bg,Изгубени очила в зала заминаване,"Забравих очила с кафяви рамки на масата в кафенето след проверката за сигурност, около 14 ч. в събота. Как мога да проверя дали са намерени?",Lost-property enquiries,U3,Information Desk,"Check the café and terminal lost-property records for glasses with brown frames.
+
+Draft:
+Здравейте, Иван Костов,
+
+Ще проверим дали са предадени очила с кафяви рамки в района на кафенето след проверката за сигурност. Ако помните кое е кафенето или има отличителен белег на очилата, моля, съобщете ни.
+
+С уважение,
+Екип на информационното гише, Летище София „Васил Левски“",High,No
+P07,2027-03-02 10:25,EN,Sky Handling Operations,ops@skyhandling-example.com,Stand request — ferry flight 4 March,"Good morning, we have a ferry flight arriving 04 March at 06:40 and request a remote stand with GPU availability for approximately four hours. Please confirm.",Airline and handler operational requests,U2,Terminal Operations,"Check remote stand and ground power availability for 4 March at 06:40 and obtain duty approval before confirming.
+
+Draft:
+Hello Sky Handling Operations,
+
+Thank you for your request. We will check stand and ground power availability for the requested window. Please send the flight identifier and the aircraft type.
+
+Kind regards,
+Terminal Operations Team, Sofia Airport ""Vasil Levski""",High,Yes
+P08,2027-03-02 10:48,EN,Adria Wings — Station Manager,station.sof@adriawings-example.com,Additional check-in desks for summer season,For the summer schedule we expect two additional rotations on Tuesday and Thursday mornings and will need two further check-in desks between 04:30 and 07:00. Who should we address the formal request to?,Airline and handler operational requests,U3,Terminal Operations,"Review seasonal check-in desk capacity with the airline and confirm the right contact for the formal request.
+
+Draft:
+Hello Adria Wings,
+
+Please send the effective dates and the flight schedule so we can assess the request for two additional check-in desks between 04:30 and 07:00 on Tuesdays and Thursdays. We will also confirm who should receive the formal request.
+
+Kind regards,
+Terminal Operations Team, Sofia Airport ""Vasil Levski""",High,No
+P09,2027-03-02 11:05,BG,Десислава Иванова,d.ivanova@sofconnect-example.bg,Въпрос относно пренасяне на отпуск,"Здравейте, имам 6 неизползвани дни отпуск от миналата година. Може ли да ги пренеса и до кога трябва да ги ползвам?",HR questions,U3,HR,"Route confidentially to the designated personnel contact to verify the leave balance and the applicable deadline.
+
+Draft:
+Здравейте, Десислава Иванова,
+
+Ще проверим условията за пренасяне на неизползвания отпуск и срока за ползването му. Ще Ви отговорим по служебния канал.
+
+С уважение,
+Екип „Човешки ресурси“, Летище София „Васил Левски“",High,No
+P10,2027-03-02 11:22,EN,Elena Marinova — Capital Daily,e.marinova@capitaldaily-example.bg,Passenger numbers Q1 — request for comment,I am preparing an article on regional airport growth and would like your Q1 passenger figures and a short comment from management. My deadline is Thursday 17:00.,Press enquiries,U2,Web and Communications,"Record the Thursday 17:00 deadline and clear the passenger figures and any management comment for release before replying with content.
+
+Draft:
+Hello Elena Marinova,
+
+Thank you for your request. We have noted your Thursday 17:00 deadline and will confirm which figures and comments are available for publication.
+
+Kind regards,
+Web and Communications Team, Sofia Airport ""Vasil Levski""",High,Yes
+P11,2027-03-02 11:40,EN,Daniel Hughes — VoxAI,d.hughes@voxai-example.io,AI chatbot for airports — 15 minutes?,"Hi, we deploy conversational AI for airports and have reduced call volumes by 40% at three European airports. Would you have 15 minutes next week for a short demo?",Vendor outreach,U4,Commercial,No reply needed now: log the VoxAI pitch and review it if a relevant sourcing need arises.,High,No
+P12,2027-03-02 12:01,EN,SolarEdge Partners,sales@solaredgepartners-example.com,Rooftop solar potential at your terminals,"Dear team, we specialise in rooftop photovoltaic installations for transport infrastructure and would welcome the chance to present our approach. Attached is our company profile.",Vendor outreach,U4,Marketing and Business Development,No reply needed now: log the proposal and screen it with Technical/Infrastructure against planned facilities projects. Check the attached company profile in the original email.,High,No
+P13,2027-03-02 12:18,BG,Николай Георгиев,n.georgiev@sofconnect-example.bg,Неработещ ескалатор до изход A12,"Ескалаторът към изход A12 не работи от снощи. Пътниците използват стълбите, а има и хора с багаж. Моля за реакция.",Other enquiries and requests,U2,Technical/Infrastructure,"Inspect the escalator to gate A12 during this shift and log the fault. Coordinate signage and an accessible route with Terminal Operations.
+
+Draft:
+Здравейте, Николай Георгиев,
+
+Благодарим за сигнала за неработещия ескалатор до изход A12. Ще проверим съоръжението и ще уточним с екипа на терминала кой достъпен маршрут могат да ползват пътниците.
+
+С уважение,
+Екип „Техническа поддръжка и инфраструктура“, Летище София „Васил Левски“",High,No
+P14,2027-03-02 12:44,EN,Peter Novak,p.novak-example@seznam.cz,Charged twice for pre-booked parking,I pre-booked parking online (booking 88231) but the barrier did not open and I had to take a ticket. I have now been charged twice. Please refund the second charge.,Passenger complaints,U3,Customer Experience,"Ask Finance to reconcile booking 88231 and the barrier transaction before any refund decision.
+
+Draft:
+Hello Peter Novak,
+
+We are sorry for the trouble you had at the barrier. We will review booking 88231 and both charges. If you can, please send the barrier ticket number and the dates of the two charges.
+
+Kind regards,
+Customer Experience Team, Sofia Airport ""Vasil Levski""",High,Yes
+P15,2027-03-02 13:10,BG,Румен Атанасов,r.atanasov-example@gmail.com,Такси от летището — надписана цена,"Платих 48 лв. за курс до центъра, който обикновено струва 20 лв. Таксито беше взето от стоянката пред Терминал 2. Какво правите по този въпрос?",Passenger complaints,U3,Customer Experience,"Identify the taxi operator at the Terminal 2 rank and ask Commercial to check the fare complaint.
+
+Draft:
+Здравейте, Румен Атанасов,
+
+Съжаляваме за неприятното преживяване. Моля, изпратете датата и приблизителния час на пътуването, както и снимка на касовата бележка или регистрационния номер на таксито, ако ги имате.
+
+С уважение,
+Екип „Обслужване на клиенти“, Летище София „Васил Левски“",High,No
+P16,2027-03-02 13:30,EN,Sarah Lindqvist,s.lindqvist-example@telia.se,Wheelchair assistance request for 19 March,"My father flies on 19 March, arriving 11:20, and will need wheelchair assistance from the aircraft to the arrivals hall. He has limited mobility but can walk a few steps. How do we arrange this?",Other enquiries and requests,U3,Ground Handling,"Coordinate the arrival handoff with the operating airline and advise the sender how to book assistance.
+
+Draft:
+Hello Sarah Lindqvist,
+
+Wheelchair assistance is arranged through your father's airline, so please request it from them for his 19 March arrival. If you share the flight number, we can help confirm the arrival arrangements.
+
+Kind regards,
+Ground Handling Team, Sofia Airport ""Vasil Levski""",High,No
+P17,2027-03-02 13:52,EN,Bella Caffe — Store Manager,manager.sof@bellacaffe-example.com,Delivery access hours for airside unit,We would like to change our delivery slot from 05:00 to 04:30 to be ready before the first wave. What is the process and who approves it?,Other enquiries and requests,U3,Commercial,"Check feasibility of the 04:30 delivery slot with Terminal Operations and obtain Security clearance before any change.
+
+Draft:
+Hello Bella Caffe,
+
+Thank you for your request. We will check whether a 04:30 slot is possible and confirm the approval process. Please share the requested start date and delivery days.
+
+Kind regards,
+Commercial Team, Sofia Airport ""Vasil Levski""",High,Yes
+P18,2027-03-02 14:15,BG,Техно Ритейл АД,it@technoretail-example.bg,Проблем с подаването на данни за продажби,От 28 февруари системата ни не изпраща автоматично дневните продажби към вашия портал. Изпращаме файловете ръчно. Моля за съдействие от ваша страна.,Other enquiries and requests,U3,ICT,"Open a support ticket and reconcile the manually submitted sales files with Commercial.
+
+Draft:
+Здравейте, Техно Ритейл АД,
+
+Ще проверим автоматичното подаване на данните и дали ръчно изпратените файлове са получени. Моля, посочете кога е било последното успешно подаване и дали системата показва грешка.
+
+С уважение,
+Екип „ИКТ“, Летище София „Васил Левски“",High,No
+P19,2027-03-02 14:33,EN,Marek Zielinski,m.zielinski-example@student.uw.edu.pl,Master's thesis — questions on airport sustainability,"I am writing a thesis on decarbonisation at mid-sized European airports and would be grateful for ten minutes with someone from your team, or answers to five written questions.",Other enquiries and requests,U4,Web and Communications,"Check whether published sources answer the questions and whether a staff response is available.
+
+Draft:
+Hello Marek Zielinski,
+
+Thank you for your interest. Please send your five questions and your deadline, and we will check whether a colleague can respond or whether published information answers them.
+
+Kind regards,
+Web and Communications Team, Sofia Airport ""Vasil Levski""",Medium,Yes
+P20,2027-03-02 14:50,EN,IT Service Desk,no-reply@secure-mail-verify-example.net,Your mailbox will be deactivated within 24 hours,Your mailbox has exceeded its storage quota and will be deactivated. Click here to verify your credentials and restore full access immediately.,Other enquiries and requests,U2,ICT,"Report through the internal ICT channel, preserve the original and check whether anyone interacted with it. Keep the link unopened.
+
+Draft to ICT:
+Hello ICT Service Desk team,
+
+We received a suspected phishing email, claiming to come from an IT service desk, saying that the mailbox will be deactivated within 24 hours and asking recipients to verify their credentials through a link. Please review the original through the internal reporting channel and check whether anyone has interacted with it.
+
+Kind regards,
+ICT Team, Sofia Airport ""Vasil Levski""",High,Yes
+P21,2027-03-02 15:08,EN,Nord Clean Ltd — Accounts,accounts@nordclean-example.com,RE: Invoice 2027-4471 — second reminder,"Following our message this morning, we still have no confirmation on invoice 2027-4471. Please advise whether the invoice was received by your finance department.",Supplier invoices,U3,Finance,"Link this message to the same sender's earlier reminder about invoice 2027-4471 and prepare one coordinated update for human review.
+
+Draft:
+Hello Nord Clean Ltd,
+
+Thank you for following up. We will check whether invoice 2027-4471 was received by our finance department and include that confirmation in our update.
+
+Kind regards,
+Finance Team, Sofia Airport ""Vasil Levski""",High,Yes
+P22,2027-03-02 15:25,BG,Апронен контрол,apron.duty@sofconnect-example.bg,Разлято масло на перона до позиция 7,"Констатирано разливане на масло около позиция 7, приблизително 2 кв. м. Зоната е временно обозначена. Необходимо е почистване и регистриране на случая.",Safety reports,U1,Terminal Operations,"Alert the duty lead immediately, verify that the temporary markings are effective, arrange approved cleanup of the oil spill at position 7 and log the incident. Have the duty lead confirm clearance before normal use resumes.",High,Yes
+P23,2027-03-02 15:47,EN,Thomas Brandt,t.brandt-example@outlook.com,Compensation claim — 3 hour delay on 26 February,My flight on 26 February was delayed by three hours and twenty minutes. Under EU261 I am entitled to 250 EUR compensation. Please confirm how you will process this claim.,Passenger complaints,U3,Customer Experience,"Explain how to submit the EU261 claim to the airline that operated the flight and help identify its claims channel if needed.
+
+Draft:
+Hello Thomas Brandt,
+
+Thank you for your message. Compensation claims under EU261 are handled by the airline that operated your flight, so please submit your claim to that airline. If you share the flight number, we can help you find the right claims channel.
+
+Kind regards,
+Customer Experience Team, Sofia Airport ""Vasil Levski""",High,Yes
+P24,2027-03-02 16:05,BG,Мария Тодорова,m.todorova-example@abv.bg,Отношение на служител на проверка за сигурност,"Служителка на проверката за сигурност ми говори грубо пред други пътници, защото не бях извадила лаптопа си. Очаквам извинение.",Passenger complaints,U3,Customer Experience,"Ask Security to review the interaction once the checkpoint and time are known.
+
+Draft:
+Здравейте, Мария Тодорова,
+
+Съжаляваме за неприятното преживяване на проверката за сигурност. Моля, посочете датата, приблизителния час и терминала, за да можем да проверим случая.
+
+С уважение,
+Екип „Обслужване на клиенти“, Летище София „Васил Левски“",High,No
+P25,2027-03-02 16:22,EN,Julia Fischer,j.fischer-example@gmx.de,Lost teddy bear — my daughter is inconsistent,"We flew out on Sunday and our four-year-old left her brown teddy bear, probably at the gate A9 seating. She is heartbroken. Any chance it was handed in?",Lost-property enquiries,U3,Information Desk,"Search lost-property reports for a brown teddy bear near gate A9.
+
+Draft:
+Hello Julia Fischer,
+
+We are sorry to hear about the lost teddy bear and will check whether it was handed in near gate A9. If you can, please send your flight number and describe any distinctive markings.
+
+Kind regards,
+Information Desk Team, Sofia Airport ""Vasil Levski""",High,No
+P26,2027-03-02 16:40,EN,Sky Handling — Duty Supervisor,duty@skyhandling-example.com,Baggage belt stoppage this morning,"Belt 3 stopped twice this morning for a total of around 25 minutes, which delayed two departures. Can maintenance review and let us know what happened?",Airline and handler operational requests,U2,Technical/Infrastructure,"Check the current status of belt 3 with the handler, review the fault records for both stoppages and see whether upcoming flights are affected.
+
+Draft:
+Hello Sky Handling,
+
+Thank you for the report. We will check whether belt 3 is operating normally and review both stoppages, and we will share our findings once they are confirmed.
+
+Kind regards,
+Technical/Infrastructure Team, Sofia Airport ""Vasil Levski""",High,Yes
+P27,2027-03-02 17:02,BG,Строй Инвест ЕООД,office@stroyinvest-example.bg,Запитване за дата на плащане,Моля да потвърдите кога ще бъде платена фактура 2027-0091 от 12 януари. Съгласно договора срокът беше 45 дни.,Supplier invoices,U3,Finance,"Check the contractual due date and confirm the payment status with the payment approver.
+
+Draft:
+Здравейте, Строй Инвест ЕООД,
+
+Ще проверим договорения срок и статуса на фактура 2027-0091 и ще Ви уведомим, когато разполагаме с потвърдена информация за плащането.
+
+С уважение,
+Финансов екип, Летище София „Васил Левски“",High,Yes
+P28,2027-03-02 17:20,EN,Kristian Dimov,k.dimov-example@gmail.com,Follow-up on my application — Maintenance Technician,I applied for the maintenance technician position three weeks ago and have not heard back. Could you let me know whether the position is still open?,HR questions,U3,HR,"Route confidentially to the designated recruitment contact.
+
+Draft:
+Hello Kristian Dimov,
+
+Thank you for your follow-up. We will check the status of the Maintenance Technician vacancy and your application with the recruitment contact.
+
+Kind regards,
+HR Team, Sofia Airport ""Vasil Levski""",High,No
+P29,2027-03-02 17:38,EN,BrightMedia Advertising,partnerships@brightmedia-example.com,Digital advertising screens — partnership proposal,We would like to propose a revenue-share model for digital advertising screens in your departure area. Who handles commercial partnerships?,Vendor outreach,U4,Marketing and Business Development,"Assess the revenue-share proposal against the airport's advertising plans and coordinate any concession implications with Commercial.
+
+Draft:
+Hello BrightMedia Advertising,
+
+Thank you for your proposal. Please send a short overview of the revenue-share model and any space and installation requirements, and we will pass it to the right team.
+
+Kind regards,
+Marketing and Business Development Team, Sofia Airport ""Vasil Levski""",High,No
+P30,2027-03-03 07:12,BG,Петър Славов,p.slavov-example@mail.bg,Течности и покупки от дюти фрий при прекачване,Летя през Виена с покупка от дюти фрий от София. Ще ми вземат ли парфюма при втората проверка? Какво трябва да направя?,Other enquiries and requests,U3,Information Desk,"Check the current liquids rules for transfer passengers with Security and point the passenger to Vienna Airport for confirmation.
+
+Draft:
+Здравейте, Петър Славов,
+
+Препоръчваме при покупката да поискате парфюмът да бъде запечатан в защитна торба заедно с касовата бележка и да не го отваряте до крайната си дестинация. Правилата при прекачване зависят от летището на трансфер, затова моля, проверете актуалните изисквания на летище Виена преди пътуването.
+
+С уважение,
+Екип на информационното гише, Летище София „Васил Левски“",Medium,Yes
+P31,2027-03-03 07:35,EN,Hannah Price,h.price-example@icloud.com,Is there a pharmacy after security?,"I fly on Friday evening and need to buy basic medication. Is there a pharmacy airside, and what are the opening hours?",Other enquiries and requests,U3,Commercial and Concessionaires,"Ask the relevant concessionaire to verify the pharmacy location and Friday evening opening hours.
+
+Draft:
+Hello Hannah Price,
+
+Thank you for your question. Which terminal are you departing from? We will check whether there is a pharmacy after security and confirm its opening hours for Friday evening.
+
+Kind regards,
+Commercial and Concessionaires Team, Sofia Airport ""Vasil Levski""",High,No
+P32,2027-03-03 08:01,EN,Alpine Facility Services,finance@alpinefacility-example.com,Dispute — deduction on invoice 884/2027,"We note a deduction of EUR 1,100 on our February invoice without explanation. Please provide the basis for the deduction or arrange payment of the full amount.",Supplier invoices,U3,Finance,"Check the EUR 1,100 deduction on invoice 884/2027 with the contract owner and involve Legal if the contract interpretation is disputed.
+
+Draft:
+Hello Alpine Facility Services,
+
+We will review the EUR 1,100 deduction on invoice 884/2027 and follow up once we have verified the basis for it.
+
+Kind regards,
+Finance Team, Sofia Airport ""Vasil Levski""",High,Yes
+P33,2027-03-03 08:20,BG,Пътник,anon.traveller-example@abv.bg,Неработеща тоалетна Терминал 2,Тоалетната до изход B10 е неизправна от сутринта — две от кабините не се заключват и няма сапун.,Passenger complaints,U2,Terminal Operations,"Send cleaning and maintenance to restock soap, secure the defective cubicles and verify the repair.
+
+Draft:
+Здравейте,
+
+Благодарим за сигнала за тоалетната до изход B10 на Терминал 2. Ще предадем на екипа на терминала да провери заключването на кабините и да зареди сапун.
+
+С уважение,
+Екип „Терминални операции“, Летище София „Васил Левски“",High,No
+P34,2027-03-03 08:44,EN,DeIce Nordic AB,contracts@deicenordic-example.se,Winter season contract — scope clarification,Before we quote for next winter we need clarification on expected fluid volumes and whether pad allocation remains as last season. Can we arrange a call?,Vendor outreach,U3,Commercial,"Obtain approved technical input from Terminal Operations and reply through the formal procurement channel if a tender is active.
+
+Draft:
+Hello DeIce Nordic AB,
+
+Thank you for your message. We will confirm the appropriate channel for your scope questions and share any approved clarification through it.
+
+Kind regards,
+Commercial Team, Sofia Airport ""Vasil Levski""",High,Yes
+P35,2027-03-03 09:05,EN,Nova TV — Production,production@novatv-example.bg,Filming permission request — 11 March,"We would like to film a short segment in the departures hall on 11 March between 09:00 and 11:00, with one camera operator and one reporter. What is the approval process?",Press enquiries,U2,Web and Communications,"Check the filming window and location with Terminal Operations and Security before any permission is issued.
+
+Draft:
+Hello Nova TV,
+
+Thank you for your request. We will review your filming request for 11 March between 09:00 and 11:00. Please send your planned shots and equipment list so we can confirm the approval process.
+
+Kind regards,
+Web and Communications Team, Sofia Airport ""Vasil Levski""",High,Yes
+P36,2027-03-03 09:28,BG,Емил Стоянов,e.stoyanov-example@gmail.com,Изгубен паспорт в зоната за заминаване,Вчера вечерта изгубих български паспорт някъде между проверката за сигурност и изход A6. Летя отново в петък. Какво да направя?,Lost-property enquiries,U2,Information Desk,"Check terminal records promptly and coordinate with Security on handing over any found document.
+
+Draft:
+Здравейте, Емил Стоянов,
+
+Ще проверим за намерен паспорт в зоната между проверката за сигурност и изход A6. Тъй като пътувате в петък, моля, още днес се свържете с летищната полиция и с органа, издал документа, за указания.
+
+С уважение,
+Екип на информационното гише, Летище София „Васил Левски“",High,Yes
+P37,2027-03-03 09:50,EN,CloudPoint Licensing,sales@cloudpoint-example.com,Reduce your Microsoft licensing spend,We help infrastructure operators optimise Microsoft licensing and typically identify 18% savings. May I send a short overview?,Vendor outreach,U4,Commercial,No reply needed now: log the offer and involve ICT if a licensing review is underway.,High,No
+P38,2027-03-03 10:11,EN,Robert Lang,r.lang-example@yahoo.com,40 minute wait for wheelchair assistance,My wife waited 40 minutes at the aircraft for assistance on arrival last Thursday. She has a heart condition and found this very distressing. This needs to be looked at.,Passenger complaints,U2,Customer Experience,"Ask the airline or handler for dispatch records and start a same-shift review because of the reported health impact.
+
+Draft:
+Hello Robert Lang,
+
+I am sorry to hear about the long wait and the distress it caused your wife. Please share the flight number and the arrival date so we can review the assistance arrangements.
+
+Kind regards,
+Customer Experience Team, Sofia Airport ""Vasil Levski""",High,Yes
+P39,2027-03-03 10:30,BG,Людмила Христова,l.hristova@sofconnect-example.bg,Достъп до системи за нов служител,"От понеделник започва нов колега в отдел Поддръжка. Моля за създаване на профил, достъп до CMMS и служебна поща.",HR questions,U2,ICT,"Verify the start date and obtain approvals for email and CMMS access before provisioning.
+
+Draft:
+Здравейте, Людмила Христова,
+
+Ще регистрираме заявка за служебна поща и достъп до CMMS. Моля, изпратете по вътрешния канал потвърждение за началната дата и одобрената роля в CMMS.
+
+С уважение,
+Екип „ИКТ“, Летище София „Васил Левски“",High,Yes
+P40,2027-03-03 10:52,EN,G. Dimitrov,gd-example@mail.com,Question about yesterday,"Hello, I was at the airport yesterday and something happened that I want to discuss. Can someone call me back? My number is in my signature.",Other enquiries and requests,U3,Information Desk,"Have a reviewer check the original email for a callback number and ask for enough detail to route the case.
+
+Draft:
+Hello G. Dimitrov,
+
+Thank you for your message. Could you briefly describe what happened and where at the airport it took place? If you would like a callback, please confirm the best number to reach you.
+
+Kind regards,
+Information Desk Team, Sofia Airport ""Vasil Levski""",Low,Yes
