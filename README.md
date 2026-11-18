@@ -4,7 +4,11 @@ A Gmail triage agent for a shared airport inbox (Sofia Airport "Vasil Levski"). 
 inbox messages, asks Claude (sonnet 5.5) to classify each one, writes **one row per Gmail message ID** to a Google Sheet, and
 applies **six labels** to the original message. It never replies, forwards, moves, archives or deletes mail.
 
-Despite the fact that for Sofia Airport the right architecture should be probably with MS Copilot, Power automate and Outlook, I chose to implement on Gmail (due to available accounts) + Claude model (as more familiar to me). The code was written through OpenAI prompts for Claude to complete the scripts. 
+Despite the fact that for Sofia Airport the right architecture should be probably with MS Copilot, Power automate and Outlook, I chose to implement on Gmail (due to available accounts) + Claude model (as more familiar to me). The code was written through OpenAI generated prompts for Claude to complete the scripts.
+
+The solution is just an example. It is not synced with the enterprise software of Sofia Airport, nor it is data protection regulations (such as GDPR) compliant.
+
+If we assume the 40 questions representable of the daily received email volume (~20 daily) it costs about $9 a month, and at 10× volume (200 a day) about $37 a month, so cost grows about 4× rather than 10×. The agent would handle successfully 120 emails an hour with the current batch size setting, so a concentrated 10× peak is absorbed within an hour or two. A backlog above 300 unread messages would be skipped, and a gmail.com account’s trigger-runtime quota caps it at roughly 750 emails a day.
 
 This repository is meant to be **reproduced**, not just read: the prompts, configuration exports, flow
 definitions and scripts are all here, and a CI check keeps them consistent with the code.
